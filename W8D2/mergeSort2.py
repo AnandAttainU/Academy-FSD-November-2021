@@ -1,6 +1,6 @@
 def merge(A, start1, end1, start2, end2): # p1 0, end1 = 2, p2 = 3, end2 = 5
-    Left = A[start1:end1+1]
-    Right = A[start2: end2+1]
+    Left = A[start1:end1+1] # [2, 5, 8]
+    Right = A[start2: end2+1] # [3, 10, 14]
 
     p1 = 0
     p2 = 0
@@ -35,5 +35,6 @@ def mergeSort(A, left, right):
     merge(A, left, mid, mid+1, right)
 
 A = [2, 8, 5, 14, 10, 3]
-mergeSort(A, 0, 5)
+# [2, 3, 5, 8, 10, 14]
+mergeSort(A, 0, len(A)-1)
 print(A)
