@@ -1,22 +1,22 @@
 stack = list()
 
-def push(x):
+def push(x): # O(1)
     global stack
-    stack.append(x)
+    stack.append(x) 
 
-def pop():
+def pop(): # O(1)
     global stack
     if isEmpty():
         return "No elements in the Stack from POP"
     return stack.pop()
 
-def peek():
+def peek(): # O(1)
     global stack
     if isEmpty():
         return "No elements in the Stack from Peek"
     return stack[-1]
 
-def isEmpty():
+def isEmpty(): # O(1)
     global stack
     if len(stack)==0:
         return True
