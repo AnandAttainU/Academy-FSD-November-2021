@@ -1,0 +1,25 @@
+Heading tags -> h1, h2 .... h6
+anchor tag -> links -> <a href>
+<div>
+
+<p>
+
+This full <span styling>paragraph</span>
+
+<img>
+
+<button>
+
+<table>
+    <tr>
+        <th>
+        <td>
+
+<ul>
+    <li>
+    <li>
+<ol>
+    <li>
+    <li>
+
+<br>
