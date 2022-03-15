@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DAY 2</title>
+</head>
+<body>
+    <a href="http://facebook.com" target="_blank">Open Facebook</a>
+    <form action="./" method="POST" enctype="multipart/form-data">
+        <label>
+            <u>
+                <b>
+                    <i> underline First Name:
+
+                    </i> 
+                </b> 
+            </u>
+        </label>
+        <br>
+        <input type="text" name="firstName" placeholder="write your first name"/><br><br>
+        <label>Last Name:</label><br>
+        <input type="text" name="lastName"/><br>
+        <label>Password:</label><br>
+        <input type="password"><br>
+        <label>Gender:</label><br>
+        <input type="radio" value="Male" name="gender"><label>Male</label>
+        <input type="radio" value="Female" name="gender"><label>Female</label>
+        <input type="radio" value="Custom" name="gender"><label>Custom</label>
+        <br><br>
+        <label>Language spoken:</label><br>
+        <input type="checkbox" value="English" name="language"><label>English</label>
+        <input type="checkbox" value="Spanish" name="language"><label>Spanish</label>
+        <input type="checkbox" value="Sanskrit" name="language"><label>Sanskrit</label>
+        <br><br>
+        <label>Qualification:</label><br>
+        <select name="Qualification">
+            <option value="">Select...</option>
+            <option value="Graduate">Graduate</option>
+            <option value="Post-Graduate">Post-Graduate</option>
+            <option value="Under Graduate">Under Graduate</option>
+        </select>
+        <br><br>
+        <label>Profile Image:</label><br>
+        <input type="file" name="profileImage" accept="image/jpg,video/mp4"><br><br>
+        <input type="submit" value="Sign Up">
+        <!-- <label>Gender:</label><br> -->
+    </form>
+</body>
+</html>
