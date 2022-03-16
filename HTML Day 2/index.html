@@ -7,24 +7,16 @@
     <title>HTML DAY 2</title>
 </head>
 <body>
-    <a href="http://facebook.com" target="_blank">Open Facebook</a>
-    <form action="./" method="POST" enctype="multipart/form-data">
-        <label>
-            <u>
-                <b>
-                    <i> underline First Name:
-
-                    </i> 
-                </b> 
-            </u>
-        </label>
-        <br>
-        <input type="text" name="firstName" placeholder="write your first name"/><br><br>
+    <form action="./index.html" method="GET">
+        <label>First Name:(*)</label><br>
+        <input type="text" name="firstName1" required/><br><br>
         <label>Last Name:</label><br>
-        <input type="text" name="lastName"/><br>
+        <input type="text" name="lastName2"/><br>
         <label>Password:</label><br>
-        <input type="password"><br>
-        <label>Gender:</label><br>
+        <input type="password" name="password" minlength="6" required/><br>
+        <label>Amount:</label>
+        <input type="number" name="amount" min="1" max="10"/>
+        <!-- <label>Gender:</label><br>
         <input type="radio" value="Male" name="gender"><label>Male</label>
         <input type="radio" value="Female" name="gender"><label>Female</label>
         <input type="radio" value="Custom" name="gender"><label>Custom</label>
@@ -41,11 +33,10 @@
             <option value="Post-Graduate">Post-Graduate</option>
             <option value="Under Graduate">Under Graduate</option>
         </select>
-        <br><br>
-        <label>Profile Image:</label><br>
-        <input type="file" name="profileImage" accept="image/jpg,video/mp4"><br><br>
-        <input type="submit" value="Sign Up">
-        <!-- <label>Gender:</label><br> -->
+        <br><br> -->
+        <!-- <label>Profile Image:</label><br>
+        <input type="file" name="profileImage" accept="image/jpg"><br><br> -->
+        <input type="submit" value="Sign Up"/>
     </form>
 </body>
 </html>
