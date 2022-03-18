@@ -1,0 +1,9 @@
+CSS -> Cascading Style Sheet
+
+inline CSS
+internal CSS
+External CSS
+
+CSS specificity:
+
+!important > inline > id > class > tags

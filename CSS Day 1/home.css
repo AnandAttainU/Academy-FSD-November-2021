@@ -1,0 +1,26 @@
+h1 {
+    color: yellow;
+    font-family: monospace;
+}
+
+
+
+/* Styling for body tag */
+body {
+    background-color: slategray;
+}
+
+/*Id selector*/
+#text-content-p {
+    color: blue !important
+}
+
+/*Class selector*/
+.text-content {
+    color: palevioletred !important
+}
+
+p {
+    color:rebeccapurple;
+}
+
