@@ -1,0 +1,28 @@
+.container {
+    position: relative;
+    height: 200px;
+    background-color: rgb(114, 95, 82);
+}
+
+.p1 {
+    position: absolute;
+    top: 10px;
+    right: 10px
+}
+
+body {
+    height: 200vh;
+}
+
+.p2 {
+    position: relative;
+    left: 100px;
+    top: 50px;
+}
+
+.div-2 {
+    position: sticky;
+    
+    background-color: slategrey;
+}
+

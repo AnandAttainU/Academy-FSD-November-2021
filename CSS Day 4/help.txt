@@ -1,0 +1,8 @@
+Positions -> static, fixed, relative, absolute, sticky
+Shorthand Properties
+Psuedo class
+Psuedo elements
+Transitions
+Shadows 
+Gradients
+Transformations
