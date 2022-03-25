@@ -1,0 +1,16 @@
+nav {
+    background-color: grey;
+    position: fixed;
+    height: 100px;
+}
+
+.container {
+    height: 200vh;
+}
+
+a {
+    height: 50px;
+    width: 100px;
+    background-color: indianred;
+    margin: 10px;
+}

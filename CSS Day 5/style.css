@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.item {
+    width: 100px;
+    margin: 10px;
+}
+
+.a {
+    background-color: #AD8B73;
+    height: 50px;
+    order: 3;
+}
+
+.b {
+    background-color: #CEAB93;
+    height: 70px;
+    order: 2;
+}
+
+.c {
+    background-color: #E3CAA5;
+    height: 90px;
+    order: 4;
+}
+
+.d {
+    background-color: #f2e5ae;
+    height: 110px;
+    order: 1;
+}
