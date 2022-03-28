@@ -1,0 +1,8 @@
+Flex-grow
+flex-shrink
+flex-basis
+
+flex: <flex-grow> <flex-shrink> <flex-basis>
+flex: 0 1 auto;
+
+

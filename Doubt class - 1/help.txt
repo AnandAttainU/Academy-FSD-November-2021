@@ -1,0 +1,19 @@
+container
+1. display: flex
+2. flex-direction
+3. align-items
+4. justify-content
+5. flex-flow -> <direction> <wrap>
+6. flex-wrap
+7. align-content
+
+
+
+
+item
+1. order
+2. align-self
+3. flex-grow
+4. flex-shrink
+5. flex-basis
+6. flex: <grow> <shrink> <basis>

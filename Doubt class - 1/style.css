@@ -1,0 +1,18 @@
+.container {
+    height: 200px;
+    width: 200px;
+    border: 2px solid red;
+    background-image: radial-gradient(blue, violet, purple);
+}
+
+.one {
+    display: inline-block;
+    height: 100px;
+    width: 200px;
+    transition: width 4s cubic-bezier(0.23, 1, 0.320, 1);
+    /* box-shadow: 20px 19px 20px 15px teal; */
+}
+
+.one:hover {
+    width: 400px;
+}

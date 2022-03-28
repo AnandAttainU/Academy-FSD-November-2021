@@ -1,5 +1,5 @@
 CSS Box Model
 Border, Margins and Paddings
-Display Properties
-Page Layout Properties
-CSS units
+Display Properties -> inline, block, inline-block
+Page Layout Properties -> positions
+CSS units -> px, vh, vw, em, rem

@@ -4,6 +4,8 @@
     align-items: center;
     flex-wrap: wrap;
     flex-direction: row;
+    align-content: flex-end;
+    height: 200vh;
 }
 
 .item {
@@ -14,23 +16,27 @@
 .a {
     background-color: #AD8B73;
     height: 50px;
-    order: 3;
+    /* order: 3; */
 }
 
 .b {
     background-color: #CEAB93;
     height: 70px;
-    order: 2;
+    /* order: 2; */
 }
 
 .c {
     background-color: #E3CAA5;
     height: 90px;
-    order: 4;
+    /* order: 4; */
 }
 
 .d {
     background-color: #f2e5ae;
     height: 110px;
-    order: 1;
+    /* order: 1; */
+}
+
+body {
+    height: 200vh;
 }
