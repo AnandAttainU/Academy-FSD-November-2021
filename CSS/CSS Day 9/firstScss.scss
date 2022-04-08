@@ -1,0 +1,21 @@
+$fontSizeRegular: 20px;
+@mixin flexDefaults($bgColor, $fontSize: 30px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: $bgColor;
+    font-size: $fontSizeRegular + $fontSize;
+}
+
+.flexBox {
+    @include flexDefaults(yellow, 10px);
+}
+
+.articleFlex {
+    @include flexDefaults(grey, 20px);
+}
+
+.buttonFlex {
+    @include flexDefaults(orange);
+}

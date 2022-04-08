@@ -1,0 +1,18 @@
+1. $var-name: 
+2. @mixin name($param1, $param2, $param3: <val>) {
+    <css styling>
+    }               ->      @include name(param1, param2)
+3. tag1 {
+        <some styling>
+        tag2 {
+            <other styling>
+        }
+    }               ->      tag1 tag2 { <other styling> }
+4. _name.scss (module)
+    create some variables in this file.
+
+    @use 'name'
+
+    name.<var-name>
+5. calc(<formula>)  -> Normal css
+    formula         -> SCSS

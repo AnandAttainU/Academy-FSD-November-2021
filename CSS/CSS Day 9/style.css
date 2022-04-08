@@ -1,0 +1,19 @@
+:root {
+    --bgColor: lightgreen;
+    --textColor: white;
+    --fontSizeRegular: 20px;
+    --fontSizeLarge: 30px;
+}
+
+div h1 {
+    background-color: var(--bgColor);
+}
+
+div p {
+    font-size: var(--fontSizeRegular);
+}
+
+div p span {
+    font-size: calc(var(--fontSizeRegular) + 10px);
+}
+

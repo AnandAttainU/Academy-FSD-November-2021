@@ -1,0 +1,8 @@
+p::after {
+    margin: 10px;
+}
+
+div {
+    display: grid;
+    grid-template-areas: header header ;
+}

@@ -1,0 +1,8 @@
+@mixin flexDefaults($bgColor, $fontSize: 30px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: $bgColor;
+    font-size: $fontSize;
+}

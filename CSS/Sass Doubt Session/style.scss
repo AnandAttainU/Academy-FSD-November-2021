@@ -1,0 +1,63 @@
+// 1. Creating normal css styles
+// 2. Creating variables 
+// 3. Creating function/mixins for styling
+// 4. Nested element styling
+// 5. Modularizing the code
+
+
+$headerHeight: 150px;
+$headerPadding: 20px;
+$itemHeight: 187px;
+$headerBgColor: rgb(114, 2, 206);
+$headerTextColor: white;
+
+
+.header {
+    background-color: $headerBgColor;
+    color: $headerTextColor;
+    position: fixed;
+    top: 0;
+    height: $headerHeight;
+    width: 100%;
+    padding: $headerPadding;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    margin-top: $headerHeight + 2 * $headerPadding;
+
+}
+
+@mixin item($bgColor) {
+    display: flex;
+    padding-bottom: 10px;
+    border-bottom: 2px solid grey;
+    background-color: $bgColor;
+}
+
+.item1{
+    @include item(rgb(88, 130, 185));
+}
+
+.item2 {
+    @include item(aqua);
+}
+
+.item3 {
+    @include item(aquamarine);
+}
+
+.item4 {
+    @include item(aliceblue);
+}
+
+.item5 {
+    @include item(beige);
+}
+
+.imageItem {
+    height: $itemHeight;
+    border-radius: 100%;
+}
+
