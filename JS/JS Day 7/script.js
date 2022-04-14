@@ -4,7 +4,7 @@ var listEle = document.getElementById("listId");
 
 btnEle.addEventListener("click", addTask);
 
-var taskCounter = 0;
+// var taskCounter = 0;
 
 function addTask(event){
 
@@ -20,7 +20,7 @@ function addTask(event){
         // listEle.innerHTML = newStrTemplate;
 
         // creating the new li element
-        taskCounter++;
+        // taskCounter++;
         var newTaskEle = document.createElement('li');
         var checkBoxEle = document.createElement('input');
         checkBoxEle.type = 'checkbox';
@@ -55,17 +55,17 @@ function removeItem(event){
 
 function addCSS(event){
     var listEle = event.target.parentElement;
-    switch(taskCounter){
-        case 1:
-            listEle.classList.toggle('strike-off');
-            break;
-        case 2:
-            listEle.classList.toggle('task2');
-            break;
-        default:
-            
-    }
-    
+    // switch(taskCounter){
+    //     case 1:
+    //         listEle.classList.toggle('strike-off');
+    //         break;
+    //     case 2:
+    //         listEle.classList.toggle('task2');
+    //         break;
+    //     default:
+
+    // }
+    listEle.classList.toggle('strike-off');
 }
 
 
