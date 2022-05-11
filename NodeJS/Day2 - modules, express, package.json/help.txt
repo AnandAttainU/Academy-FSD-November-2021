@@ -1,0 +1,20 @@
+1. Creating different modules using CommonJS modules
+2. Do we need to upload node_modules to git repository? -> No
+3. How to avoid uploading the node_modules -> .gitignore
+4. Why package.json file is required? -> To know the dependencies
+5. What does package.json contains? -> Metadata/information about the package
+6. How to create package.json file? -> npm init -> and provide metadata information
+7. Do we need to upload package.json to git repo? -> Yes
+8. How to install dependencies modules from package.json -> npm install
+9. How to install particular package? -> npm install <packageName>
+
+10. How to create http server? -> http.createServer(//callback) Returns the Server object
+11. How to start the server on some port? -> server.listen(portNumber)
+12. When does the callback function gets called? -> When a client hits the server
+13. Where do we get the request object from client to server -> First parameter of callback function
+14. Based on the request, can we do some processing on server side -> Yes
+15. Where is the response object in server side -> second parameter of callback function
+16. How to write something to the response? -> response.write()
+17. How to stop writing to the response object -> response.end()
+
+

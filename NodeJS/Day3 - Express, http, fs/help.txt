@@ -1,0 +1,17 @@
+1. How to create server from express module? -> 
+   app = express()
+   app.get(matchingUrl, callbackFunction)    // app.post()
+2. How to write response at express server side ->
+   res.send()
+3. End the writing of response:
+   res.end()
+4. How to start the express server? ->
+   app.listen(//port Number)
+5. What is express? -> It is a node js web framework
+
+6. How to read a file from fs module -> 
+   readFileSync() -> read the file in synchronous manner
+7. How to read the file in Async manner? ->
+8. How to write the file in Sync/Async manner in fs module?
+9. How to append file in Sync/Async manner?
+10. How to delete a file in fs module?
