@@ -1,0 +1,14 @@
+li {
+    background-color: blanchedalmond;
+    padding: 20px;
+}
+
+.strike-off {
+    text-decoration: line-through;
+    background-color: burlywood;
+}
+
+.task2 {
+    text-decoration: line-through;
+    background-color: rgb(79, 48, 7);
+}

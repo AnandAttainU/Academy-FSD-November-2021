@@ -1,0 +1,7 @@
+What is middleware? - middleware is a function which does preprocessing/validation before going to main server process.
+What is the benefit of adding middleware to the code?
+What are the types of middlewares? - application level, route level, error middlewares
+how many parameters does the middleware function takes? - 3
+which function should be called inside a middlware function? - next()
+How to find which is the next middleware? - from the sequence of code written
+

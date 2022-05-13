@@ -3,9 +3,8 @@ const express = require('express');
 const app = express();
 const data  = require('./sample.js');
 
-// middlewear
+// middleware
 app.use(express.json());
-
 
 // map, filter, reduce
 
@@ -13,12 +12,12 @@ app.use(express.json());
 // domainName/users/1 -> should give e all the mbile owned by user 1
 // domainName/mobiles?id=100 -> should give me information about mobile with id 100
 
-// app.get('/mobiles', (req, res)=> {
-//     const queryParams = req.query;
-//     const userMobileInfo = data.filter((userObj)=> userObj.mobileId === Number(queryParams.id))
-//     res.send(userMobileInfo);
-//     res.end();
-// })
+app.get('/mobiles', (req, res)=> {
+    const queryParams = req.query;
+    const userMobileInfo = data.filter((userObj)=> userObj.mobileId === Number(queryParams.id))
+    res.send(userMobileInfo);
+    res.end();
+})
 
 // app.get('/users/:userId', (req, res)=>{
 //     const userMobileInfo = data.filter((userObj)=> userObj.userId === Number(req.params.userId))
