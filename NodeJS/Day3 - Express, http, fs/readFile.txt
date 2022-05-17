@@ -1,1 +1,13 @@
-Reading this File. #$%$%
+Reading this File.
+asdfkjnjasdf
+
+
+{
+    "key1": 123,
+    [
+        {
+            "key2": 2345
+        }
+    ]
+}
+"key3": 564375467

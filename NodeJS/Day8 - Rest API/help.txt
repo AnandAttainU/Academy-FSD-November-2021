@@ -1,0 +1,12 @@
+What is REST -> Representational State Transfer Protocol
+    1. HTTP methods -> GET, POST, DELETE, PUT
+    2. Uniform Interface -> Same route/url will give same result even with different users
+    3. Stateless -> Server should not maintain the state of the results
+    4. Client server architecture -> 
+    5. Layered system -> Route/url needs to thought through properly to achieve the layered system
+    6. code-on-demand -> code execution should happen on demand
+
+Points to design REST APIs:
+-> Documentation : Endpoint, HTTP Method, Description
+-> Handle all the basic HTTP methods: GET, POST, PUT, DELETE
+-> 

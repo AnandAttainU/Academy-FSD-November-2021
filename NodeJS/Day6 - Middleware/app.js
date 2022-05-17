@@ -35,16 +35,16 @@ function errorMiddleware(err, req, res, next){
 //     next();
 // }
 
-// function authMiddleware(req, res, next){
-//     isValidUser = false;
+function authMiddleware(req, res, next){
+    userCaptcha = req.body.Captcha;
+    const userValidated = isCaptchaMatching()
     
-//     if(isValidUser){
-//         console.log("Valid User");
-//     } else {
-//         console.log("Invalid User");
-//     }
-//     next();
-// }
+    if(userValidated){
+        next();
+    } else {
+        res.send("unauthenticated");
+    }
+}
 
 // app.get('/todo', (req, res)=>{
 //     res.sendFile('/Users/anand/gitRepos/AttainU/BackEnd/NodeJS/Day6 - Middleware/public/index.html');

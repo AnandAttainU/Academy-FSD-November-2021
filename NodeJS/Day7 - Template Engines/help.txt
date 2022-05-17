@@ -1,0 +1,11 @@
+What is template/view engines? - Template engines help to create static web page on server side using the dynamic data.
+What is the benefit of using template engines? - Faster performance, to save processing time on client side
+Which are some of the template engines? - ejs, handlebar, pug, dustjs
+How to use the template engines? - 
+    - npm install <template Engine>
+    - create the template file (html + js with template engine syntax)
+    - put this file inside 'views' folder
+    - inside the server code
+        res.render('index.ejs', { username, age })
+    
+

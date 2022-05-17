@@ -1,36 +1,34 @@
 const { createReadStream, createWriteStream }  = require('fs');
-const { write } = require('node:fs');
-// const { serialize } = require('node:v8');
 
-// const readStream = createReadStream('./temp.txt', {encoding: 'utf-8', highWaterMark: 5000});
+const readStream = createReadStream('./temp.txt', {encoding: 'utf-8', highWaterMark: 5000});
 
-// readStream.on('open', ()=>{
-//     console.log('File opened');
-// })
+readStream.on('open', ()=>{
+    console.log('File opened');
+})
 
-// readStream.on('close', ()=>{
-//     console.log("File Closed");
-// })
+readStream.on('close', ()=>{
+    console.log("File Closed");
+})
 
-// readStream.on('data', (content)=> {
-//     console.log(content);
-// })
+readStream.on('data', (content)=> {
+    console.log(content);
+})
 
-// // How to call a method after some time?
-// setTimeout(()=> {
-//     readStream.pause();
-//     setTimeout(() => {
-//         // readStream.resume();
-//         readStream.read();
-//         readStream.read();
-//         readStream.read();
-//         // readStream.on('end',()=>{
-//         //     setTimeout(() => {
-//         //         console.log("Reading is ended");
-//         //     }, 2000);
-//         // })
-//     }, 4000);
-// }, 1000)
+// How to call a method after some time?
+setTimeout(()=> {
+    readStream.pause();
+    setTimeout(() => {
+        // readStream.resume();
+        readStream.read();
+        readStream.read();
+        readStream.read();
+        readStream.on('end',()=>{
+            setTimeout(() => {
+                console.log("Reading is ended");
+            }, 2000);
+        })
+    }, 4000);
+}, 1000)
 
 
 const writeStream = createWriteStream('./writeStream.txt', {encoding: 'utf-8'});

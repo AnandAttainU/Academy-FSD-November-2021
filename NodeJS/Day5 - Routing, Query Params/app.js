@@ -12,12 +12,12 @@ app.use(express.json());
 // domainName/users/1 -> should give e all the mbile owned by user 1
 // domainName/mobiles?id=100 -> should give me information about mobile with id 100
 
-app.get('/mobiles', (req, res)=> {
-    const queryParams = req.query;
-    const userMobileInfo = data.filter((userObj)=> userObj.mobileId === Number(queryParams.id))
-    res.send(userMobileInfo);
-    res.end();
-})
+// app.get('/mobiles', (req, res)=> {
+//     const queryParams = req.query;
+//     const userMobileInfo = data.filter((userObj)=> userObj.mobileId === Number(queryParams.id))
+//     res.send(userMobileInfo);
+//     res.end();
+// })
 
 // app.get('/users/:userId', (req, res)=>{
 //     const userMobileInfo = data.filter((userObj)=> userObj.userId === Number(req.params.userId))
@@ -48,6 +48,7 @@ app.get('/mobiles', (req, res)=> {
 //             res.send("Mobile 2");
 //             res.end();
 //     }
+// })
     
 // })
 
@@ -57,14 +58,44 @@ app.get('/mobiles', (req, res)=> {
 // })
 
 
-app.post('/mobiles', (req, res)=>{
-    console.log(req.body);
-    data.push(req.body);
-    res.send(data);
+// app.post('/mobiles', (req, res)=>{
+//     console.log(req.body);
+//     data.push(req.body);
+//     res.send(data);
+//     res.end();
+// })
+
+
+// Display Student Marks with this url ->
+// https://www.university.attainu.com/name1/1
+// 
+const students = [
+    {
+        "id": 1,
+        "name": name1,
+        "marks": 95
+    },
+    {
+        "id": 2,
+        "name": name2,
+        "marks": 98
+    }
+]
+
+// [
+//     {
+//     "id": 1,
+//     "name": name1,
+//     "marks": 95
+//     }
+// ]
+app.get('/:studentName', (req, res)=>{
+    const stName = req.params.studentName;
+    const stId = req.query.id;
+    const studentObjArr = students.filter((student)=>{student.id === Number(stId)})
+    const marks = studentObjArr[0].marks;
+    res.send(marks);
     res.end();
 })
 
-
-
-
-app.listen(8000);
+app.listen(8000)

@@ -1,0 +1,3 @@
+Display Student Marks with this url ->
+https://www.university.attainu.com/<studentName>?id=<studentId>
+

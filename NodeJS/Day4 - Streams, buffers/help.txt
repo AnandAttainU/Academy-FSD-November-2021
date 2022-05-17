@@ -1,0 +1,10 @@
+Problems with big data?
+1. Waiting time increases beacause of the size
+
+// createReadStream() -> ReadStream Object
+// createWriteStream() -> WriteStream Object
+// 
+// .on('actionName', callback)
+// actionName -> open, data, close, end, pause, resume, read
+
+
