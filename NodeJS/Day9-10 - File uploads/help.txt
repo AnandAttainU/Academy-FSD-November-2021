@@ -1,0 +1,13 @@
+file uploads works in express/server side
+
+1. How to send html form data from client to server?
+2. How to send html form data on a specific route?
+3. How to get the form data at server side?
+4. How to parse the form data from the 'form-data' format?
+5. How to parse the file sent from the client
+
+
+What are the benefits of storing file uploads on cloud?
+1. Memory will be saved from your server system.
+2. No resposibility for data loss
+3. Easily accessible by multiple devices
