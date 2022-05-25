@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="creditCard">
+            
+        </div>
+        <div id="formElement">
+            <form>
+                <div class="formItems">
+                    <label>
+                        Card Number
+                    </label>
+                    <br>
+                    <input type="number">
+                </div>
+                <div class="formItems">
+                    <label>
+                        Card Holders
+                    </label>
+                    <br>
+                    <input type="text">
+                </div>
+                <div class="formItems">
+                    <section id="moreDetails">
+                        <div id="dateElement">
+                            <label> Expiration Date</label>
+                            <br>
+                            <select id="monthSelector">
+                                <option value="Jan">Jan</option>
+                                <option value="Feb">Feb</option>
+                                <option value="Mar">Mar</option>
+                                <option value="Apr">Apr</option>
+                            </select>
+                            <select id="yearSelector">
+                                <br>
+                                <option value="2022">2022</option>
+                                <option value="2023">2023</option>
+                                <option value="2024">2024</option>
+                                <option value="2025">2025</option>
+                            </select>
+                        </div>
+                        <div>  
+                            <label>CVV</label>
+                            <br>
+                            <input type="number">
+                        </div>
+                    </section>
+                </div>
+                <div class="formItems">
+                    <button id="submitBtn" type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

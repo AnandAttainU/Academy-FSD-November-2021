@@ -1,0 +1,59 @@
+#moreDetails {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#container {
+    width: 600px;
+    height: 700px;
+    background-color: rgb(202, 214, 240);
+    position: fixed;
+    color: grey
+}
+
+#submitBtn {
+    background-color: rgb(22, 22, 224);
+    margin-top: 40px;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+#formElement {
+    width: 550px;
+    height: 500px;
+    background-color: white;
+    margin: 170px 25px 30px 25px;
+}
+
+form {
+    padding-top: 150px;
+}
+
+.formItems {
+    margin: 10px 35px;
+}
+
+input, button {
+    width: 100%;
+    height: 35px;
+}
+select {
+    width: 48%;
+    height: 40px;
+    color: grey;
+}
+
+#dateElement {
+    width: 60%;
+}
+
+#creditCard {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(33, 63, 84);
+    width: 300px;
+    height: 250px;
+    
+}
