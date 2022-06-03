@@ -9,7 +9,7 @@ const jsonData = require('./FORMData.json');
 
 cloudinary.config({ 
     cloud_name: 'dtx1pez4d', 
-    api_key: '933722588754538', 
+    api_key: process.env.API_KEY, 
     api_secret: '14cadtiviUAfwT1jqU_nK8vkkQM'
   });
 
