@@ -1,0 +1,11 @@
+website should have these routes:
+1. / - home/root route
+2. /login
+3. /profile
+
+if user goes to home page(/) then if unauthenticated, we should redirect to login page,
+else if authenticated - then show a page with button called profile
+
+on click of profile button:
+ go to /profile route and render the profile details:
+    like - name, last name, image, etc.
