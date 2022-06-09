@@ -12,7 +12,7 @@ router.post('/', async function(req, res, next) {
 router.get('/:studentName', async (req, res) => {
     const { studentName } = req.params;
     try {
-        const studentData = await studentModel.findOne({name: studentName});
+        const studentData = await studentModel.findOne({age: {$lt: 20}});
         res.status(200).send(studentData);
     }
     catch (err){
