@@ -1,5 +1,6 @@
 var express = require('express');
 const app = require('../app');
+const studentController = require('../controller/studentController');
 var router = express.Router();
 var studentModel = require('../models/student');
 
@@ -9,16 +10,6 @@ router.post('/', async function(req, res, next) {
     console.log(result);
 });
 
-router.get('/:studentName', async (req, res) => {
-    const { studentName } = req.params;
-    try {
-        const studentData = await studentModel.findOne({age: {$lt: 20}});
-        res.status(200).send(studentData);
-    }
-    catch (err){
-        res.status(404).send(err);
-    }
-    
-})
+router.get('/:studentName', studentController)
 
 module.exports = router;

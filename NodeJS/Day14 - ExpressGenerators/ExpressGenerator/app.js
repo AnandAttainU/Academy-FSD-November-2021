@@ -3,9 +3,12 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+const mysql = require('mysql2/promise');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+
+
 
 var app = express();
 
@@ -21,6 +24,21 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+
+app.get('/showUsers', async (req, res)=>{
+  console.log("Inside the showUsers route");
+  // MySQL Setup
+  const connection = await mysql.createConnection({
+    host: 'localhost',
+    user: 'root',
+    database: 'ecommerce',
+    password: "Anand11@"
+  });
+  const [rows, fields] = await connection.query(`SELECT * FROM User ${nameVar}`);
+  res.send(rows);
+
+})
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
