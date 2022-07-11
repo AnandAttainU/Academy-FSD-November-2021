@@ -4,6 +4,20 @@ const { graphql, buildSchema } = require('graphql');
 const { graphqlHTTP } = require('express-graphql');
 const Products = require('./data');
 
+// Connecting to mongoose
+
+// 1. Building schema
+
+// getStudentDetail
+// updateStudentDetails
+// DeleteStudentDetails
+// AddNewStudent
+
+// 2. Creating the Resolvers
+// 
+
+
+
 // 1. Building schema
 // type query -> GET/Fetch
 // type Mutation -> Post, Put, Delete
@@ -19,6 +33,7 @@ const productSchema = buildSchema(`
     },
     type Query {
         getProducts: [Product],
+        getRandomEvenNumber: Int,
         getProductDetails(id: Int!): Product,
         getDiscountedPrice(id: Int!, code: String): Int
     },
@@ -42,6 +57,14 @@ const productSchema = buildSchema(`
 // 2. Creating Resolver functions
 const resolvers = {
     // Fetch the data from the Database
+    getRandomEvenNumber: ()=>{
+        let num = Math.random();
+        if(num%2==0){
+            return num;
+        }else{
+            return num+1;
+        }
+    },
     getProducts: ()=>{
         return Products;
     },
