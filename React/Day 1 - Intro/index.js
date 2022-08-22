@@ -7,7 +7,6 @@ const increment = ()=>{
     counterEle.innerText = `Counter value is ${counter}`;
 }
 
-
 const decrement = ()=>{
     counter--;
     counterEle.innerText = `Counter value is ${counter}`;

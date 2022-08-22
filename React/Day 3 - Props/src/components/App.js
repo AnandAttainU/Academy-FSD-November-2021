@@ -1,8 +1,7 @@
-// Simple JS functions which returns html/jsx
-// Name should start with capital letter
-// There should be one component per file
-// which should be exported with default export
-// Although Named export and non capital names are also supported
+// Props are Properties of a component
+// Props are immutable - can't change
+// Props data flows from parent to child
+
 
 import React from 'react';
 import Card from "./Card";
